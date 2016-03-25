@@ -2,7 +2,7 @@
 
 效果如下
 
-![拖拽动画](https://github.com/Loveway/HWAnimationTransition_OC/blob/master/pan_oc.gif)
+![拖拽动画](https://github.com/SamCoder123/SLLazyTextFiled/blob/master/sltextFiled.gif)
 
 验证textFiled的内容是否正确,请用:[self.myTextFiled textFiledIsCorrect];
 
