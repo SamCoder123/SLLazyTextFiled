@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6f-SW-XHJ">
+                                <rect key="frame" x="0.0" y="437" width="600" height="163"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSE-Wv-zhF">
+                                        <rect key="frame" x="13" y="32" width="574" height="100"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-4P-4cV" userLabel="lazyTextFiled">
+                                                <rect key="frame" x="68" y="35" width="443" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="max">
+                                                        <integer key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="warningAnimation" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="TFShowSelfOpen" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="lazyTFOpen" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="sl_superView" destination="8bC-Xf-vdC" id="pH1-x9-xuA"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.70316968759999998" blue="0.55606879669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="SO8-4P-4cV" secondAttribute="trailing" constant="63" id="8XS-Hq-GZk"/>
+                                            <constraint firstAttribute="bottom" secondItem="SO8-4P-4cV" secondAttribute="bottom" constant="35" id="DLI-e5-AB0"/>
+                                            <constraint firstItem="SO8-4P-4cV" firstAttribute="top" secondItem="XSE-Wv-zhF" secondAttribute="top" constant="35" id="U8u-i8-1Fp"/>
+                                            <constraint firstItem="SO8-4P-4cV" firstAttribute="leading" secondItem="XSE-Wv-zhF" secondAttribute="leading" constant="68" id="WpT-8H-y1F"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82208595709999999" green="0.70316968759999998" blue="0.55606879669999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="5O6-Uj-tSc"/>
+                                    <constraint firstAttribute="bottom" secondItem="XSE-Wv-zhF" secondAttribute="bottom" constant="31" id="ece-C5-IRB"/>
+                                    <constraint firstItem="XSE-Wv-zhF" firstAttribute="top" secondItem="n6f-SW-XHJ" secondAttribute="top" constant="32" id="va0-Bh-8it"/>
+                                    <constraint firstItem="XSE-Wv-zhF" firstAttribute="leading" secondItem="n6f-SW-XHJ" secondAttribute="leading" constant="13" id="wrS-eS-idD"/>
+                                    <constraint firstAttribute="trailing" secondItem="XSE-Wv-zhF" secondAttribute="trailing" constant="13" id="zh9-oa-0Ak"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2270899348" green="0.64950711029999997" blue="0.82208595709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n6f-SW-XHJ" secondAttribute="bottom" id="Exj-s5-mNk"/>
+                            <constraint firstItem="n6f-SW-XHJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dbT-q9-mG0"/>
+                            <constraint firstAttribute="trailing" secondItem="n6f-SW-XHJ" secondAttribute="trailing" id="hr2-oV-kEs"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="sl_textFiledArr" destination="SO8-4P-4cV" id="fAq-I3-Vrr"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myTextFiled" destination="SO8-4P-4cV" id="uLO-iR-Upd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="251"/>
+        </scene>
+    </scenes>
+</document>
