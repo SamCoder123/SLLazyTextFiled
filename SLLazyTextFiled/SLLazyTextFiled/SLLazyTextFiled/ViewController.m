@@ -10,7 +10,7 @@
 #import "UITextField+SLCategory.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *myTextFiled;
-
+//小王子编程之道:在简单的东西也有它的价值.诚邀你一同感受开源的乐趣
 @end
 
 @implementation ViewController
